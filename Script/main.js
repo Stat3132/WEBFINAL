@@ -16,22 +16,13 @@ var image = [
   "images/slideShowPhoto13.JPG",
 ];
 
-var request = fetch('https://quote-garden.onrender.com/api/v3/quotes')
+var request = fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
 .then(respond => {
     respond.json().then(data => {
         console.log(data)
-        quote.textContent = data.quote
+        document.getElementById('quoteOfTheDay').textContent = data[0];
    })
 })
-
-// fetch("https://api.quotable.io/random")
-//   .then(function(response) {
-//     return response.json();
-//   })
-//   .then(function(data) {
-//     console.log(data)
-//     quote.textContent = data.quote
-//   });
 
    var slideShowCounter = 0;
   setInterval(() =>{

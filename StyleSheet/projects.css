@@ -1,0 +1,17 @@
+#terrariaWiki{
+    border: none;
+    height: 400;
+    width: 200;
+    margin: 100;
+    padding-right: 10;
+    padding-left: -300;
+    left: 300;
+}
+#variablesInVegas{
+    border: none;
+    height: 500;
+    width: 800;
+    margin: 100;
+    top: 4;
+    left: 300
+}
